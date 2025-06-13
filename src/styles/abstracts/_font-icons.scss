@@ -1,0 +1,321 @@
+// Font icons styling by Icomoon
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../../public/assets/fonts/icomoon.eot?976hwj');
+    src:
+        url('../../public/assets/fonts/icomoon.eot') format('embedded-opentype'),
+        url('../../public/assets/fonts/icomoon.ttf') format('truetype'),
+        url('../../public/assets/fonts/icomoon.woff') format('woff'),
+        url('../../public/assets/fonts/icomoon.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-rectangle-having-triangles-vector:before {
+    content: '\e900';
+    color: #ff5722;
+}
+.icon-testimonials-background-vector:before {
+    content: '\e901';
+}
+.icon-video-play-pause:before {
+    content: '\e902';
+    color: #5d50c6;
+}
+.icon-bag:before {
+    content: '\e903';
+    color: #f85e9f;
+}
+.icon-hamburger:before {
+    content: '\e904';
+    color: #5d50c6;
+}
+.icon-brand-logo:before {
+    content: '\e905';
+}
+.icon-star:before {
+    content: '\e906';
+    color: #facd49;
+}
+.icon-twitter-logo .path1:before {
+    content: '\e907';
+    color: rgb(93, 80, 198);
+}
+.icon-twitter-logo .path2:before {
+    content: '\e908';
+    margin-left: -1em;
+    color: rgb(241, 242, 242);
+}
+.icon-facebook-logo:before {
+    content: '\e909';
+    color: #5d50c6;
+}
+.icon-coupon .path1:before {
+    content: '\e90a';
+    color: rgb(248, 94, 159);
+}
+.icon-coupon .path2:before {
+    content: '\e90b';
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+.icon-calander .path1:before {
+    content: '\e90c';
+    color: rgb(250, 205, 73);
+}
+.icon-calander .path2:before {
+    content: '\e90d';
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+.icon-locations .path1:before {
+    content: '\e90e';
+    color: rgb(255, 87, 34);
+}
+.icon-locations .path2:before {
+    content: '\e90f';
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+.icon-airbnb:before {
+    content: '\e911';
+}
+.icon-instagram .path1:before {
+    content: '\e912';
+    color: rgb(93, 80, 198);
+}
+.icon-instagram .path2:before {
+    content: '\e913';
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+.icon-orbitz:before {
+    content: '\e914';
+}
+.icon-expedia .path1:before {
+    content: '\e915';
+    color: rgb(25, 24, 37);
+    opacity: 0.5;
+}
+.icon-expedia .path2:before {
+    content: '\e916';
+    margin-left: -3.5625em;
+    color: rgb(25, 24, 37);
+    opacity: 0.5;
+}
+.icon-expedia .path3:before {
+    content: '\e917';
+    margin-left: -3.5625em;
+    color: rgb(25, 24, 37);
+    opacity: 0.5;
+}
+.icon-expedia .path4:before {
+    content: '\e918';
+    margin-left: -3.5625em;
+    color: rgb(25, 24, 37);
+    opacity: 0.5;
+}
+.icon-expedia .path5:before {
+    content: '\e919';
+    margin-left: -3.5625em;
+    color: rgb(25, 24, 37);
+    opacity: 0.5;
+}
+.icon-expedia .path6:before {
+    content: '\e91a';
+    margin-left: -3.5625em;
+    color: rgb(25, 24, 37);
+    opacity: 0.5;
+}
+.icon-expedia .path7:before {
+    content: '\e91b';
+    margin-left: -3.5625em;
+    color: rgb(25, 24, 37);
+    opacity: 0.5;
+}
+.icon-expedia .path8:before {
+    content: '\e91c';
+    margin-left: -3.5625em;
+    color: rgb(25, 24, 37);
+    opacity: 0.5;
+}
+.icon-expedia .path9:before {
+    content: '\e91d';
+    margin-left: -3.5625em;
+    color: rgb(25, 24, 37);
+    opacity: 0.5;
+}
+.icon-expedia .path10:before {
+    content: '\e91e';
+    margin-left: -3.5625em;
+    color: rgb(25, 24, 37);
+    opacity: 0.5;
+}
+.icon-expedia .path11:before {
+    content: '\e91f';
+    margin-left: -3.5625em;
+    color: rgb(25, 24, 37);
+    opacity: 0.5;
+}
+.icon-expedia .path12:before {
+    content: '\e920';
+    margin-left: -3.5625em;
+    color: rgb(25, 24, 37);
+    opacity: 0.5;
+}
+.icon-expedia .path13:before {
+    content: '\e921';
+    margin-left: -3.5625em;
+    color: rgb(25, 24, 37);
+    opacity: 0.5;
+}
+.icon-expedia .path14:before {
+    content: '\e922';
+    margin-left: -3.5625em;
+    color: rgb(255, 255, 255);
+}
+.icon-tripadvisor .path1:before {
+    content: '\e939';
+    color: rgb(255, 255, 255);
+}
+.icon-tripadvisor .path2:before {
+    content: '\e93a';
+    margin-left: -6.65625em;
+    color: rgb(255, 255, 255);
+}
+.icon-tripadvisor .path3:before {
+    content: '\e93b';
+    margin-left: -6.65625em;
+    color: rgb(25, 24, 37);
+    opacity: 0.5;
+}
+.icon-tripadvisor .path4:before {
+    content: '\e93c';
+    margin-left: -6.65625em;
+    color: rgb(25, 24, 37);
+    opacity: 0.5;
+}
+.icon-tripadvisor .path5:before {
+    content: '\e93d';
+    margin-left: -6.65625em;
+    color: rgb(25, 24, 37);
+    opacity: 0.5;
+}
+.icon-tripadvisor .path6:before {
+    content: '\e93e';
+    margin-left: -6.65625em;
+    color: rgb(25, 24, 37);
+    opacity: 0.5;
+}
+.icon-tripadvisor .path7:before {
+    content: '\e93f';
+    margin-left: -6.65625em;
+    color: rgb(255, 255, 255);
+}
+.icon-tripadvisor .path8:before {
+    content: '\e940';
+    margin-left: -6.65625em;
+    color: rgb(25, 24, 37);
+    opacity: 0.5;
+}
+.icon-tripadvisor .path9:before {
+    content: '\e941';
+    margin-left: -6.65625em;
+    color: rgb(25, 24, 37);
+    opacity: 0.5;
+}
+.icon-tripadvisor .path10:before {
+    content: '\e942';
+    margin-left: -6.65625em;
+    color: rgb(25, 24, 37);
+    opacity: 0.5;
+}
+.icon-tripadvisor .path11:before {
+    content: '\e943';
+    margin-left: -6.65625em;
+    color: rgb(25, 24, 37);
+    opacity: 0.5;
+}
+.icon-tripadvisor .path12:before {
+    content: '\e944';
+    margin-left: -6.65625em;
+    color: rgb(25, 24, 37);
+    opacity: 0.5;
+}
+.icon-tripadvisor .path13:before {
+    content: '\e945';
+    margin-left: -6.65625em;
+    color: rgb(25, 24, 37);
+    opacity: 0.5;
+}
+.icon-tripadvisor .path14:before {
+    content: '\e946';
+    margin-left: -6.65625em;
+    color: rgb(25, 24, 37);
+    opacity: 0.5;
+}
+.icon-tripadvisor .path15:before {
+    content: '\e947';
+    margin-left: -6.65625em;
+    color: rgb(25, 24, 37);
+    opacity: 0.5;
+}
+.icon-tripadvisor .path16:before {
+    content: '\e948';
+    margin-left: -6.65625em;
+    color: rgb(25, 24, 37);
+    opacity: 0.5;
+}
+.icon-tripadvisor .path17:before {
+    content: '\e949';
+    margin-left: -6.65625em;
+    color: rgb(25, 24, 37);
+    opacity: 0.5;
+}
+.icon-tripadvisor .path18:before {
+    content: '\e94a';
+    margin-left: -6.65625em;
+    color: rgb(25, 24, 37);
+    opacity: 0.5;
+}
+.icon-tripadvisor .path19:before {
+    content: '\e94b';
+    margin-left: -6.65625em;
+    color: rgb(25, 24, 37);
+    opacity: 0.5;
+}
+.icon-tripadvisor .path20:before {
+    content: '\e94c';
+    margin-left: -6.65625em;
+    color: rgb(25, 24, 37);
+    opacity: 0.5;
+}
+.icon-triangular-dotted-vector:before {
+    content: '\e94d';
+    color: #ff5722;
+}
+.icon-arrow-down-circle:before {
+    content: '\e952';
+}
+.icon-video-play-pause:before {
+    content: '\e902';
+    color: #5d50c6;
+}
