@@ -2,3 +2,9 @@
 @import url('./abstracts/_fonts.scss');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); //Inter font CDN
 @import url('./base/_reset.scss');
+
+div {
+    font-family: 'Circular std', serif;
+    font-size: 200px;
+    font-weight: 500;
+}
