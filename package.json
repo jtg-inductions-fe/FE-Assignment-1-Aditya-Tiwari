@@ -39,9 +39,5 @@
             "eslint --max-warnings=0"
         ],
         "*.{html,scss,json}": "prettier --check"
-    },
-    "dependencies": {
-        "modern-normalize": "^3.0.1",
-        "normalize.css": "^8.0.1"
     }
 }
