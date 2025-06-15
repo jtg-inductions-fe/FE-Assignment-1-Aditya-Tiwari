@@ -4,13 +4,60 @@
         <title>Title</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta />
         <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         />
     </head>
     <body>
-        <div>Hello World</div>
+        <header>
+            <img
+                class="header__orange-glow-image"
+                src="/assets/images/orange-glow.svg"
+                alt="orange glow on top of the homepage"
+            />
+            <nav class="navbar">
+                <div class="navbar__flex-container navbar__logo-container">
+                    <img
+                        class="navbar__logo"
+                        src="assets/images/logo.svg"
+                        alt="Travel Company logo"
+                    />
+                </div>
+                <div class="navbar__flex-container navbar__hamburger-container">
+                    <span class="icon-hamburger"></span>
+                </div>
+
+                <div class="navigation-drawer navbar__navigation-drawer">
+                    <img
+                        class="navigation-drawer__close-icon"
+                        src="/assets/images/close_icon.svg"
+                        alt="close navigation drawer icon"
+                    />
+                    <div class="navigation-drawer__navlinks-container">
+                        <ul>
+                            <a class="navigation-drawer__navlinks">Home</a>
+                            <a class="navigation-drawer__navlinks">
+                                Discover
+                            </a>
+                            <a class="navigation-drawer__navlinks">
+                                Special Deals
+                            </a>
+                            <a class="navigation-drawer__navlinks">Contact</a>
+                        </ul>
+                        <div class="navigation-drawer__button-container">
+                            <a class="btn navbar__button--login" href="/login"
+                                >Log in</a
+                            >
+                            <a class="btn navbar__button--signup" href="/signup"
+                                >Sign Up</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
         <script type="module" src="./src/script/index.js"></script>
     </body>
 </html>

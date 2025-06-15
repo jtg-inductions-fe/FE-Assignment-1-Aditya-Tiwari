@@ -1,0 +1,43 @@
+@use '../abstracts/mixins' as mixi;
+@use '../abstracts/variables' as vars;
+
+.header {
+    &__orange-glow-image {
+        position: absolute;
+        top: 0px;
+        z-index: 0;
+    }
+}
+
+.navbar {
+    @include mixi.flex-center;
+    width: 100vw;
+    padding: 38px 19px;
+
+    &__flex-container {
+        @include mixi.flex-center;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 1;
+    }
+    &__logo-container {
+        justify-content: flex-start;
+    }
+    &__logo {
+        height: 40px;
+        width: 40px;
+    }
+
+    &__hamburger-container {
+        justify-content: flex-end;
+    }
+}
+
+.icon-hamburger {
+    font-size: 40px;
+}
+
+@media screen and (max-width: 430px) {
+}
