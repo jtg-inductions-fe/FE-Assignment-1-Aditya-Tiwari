@@ -1,6 +1,7 @@
+@use 'variables' as *;
+
 @font-face {
-    font-family: 'Circular Std';
-    src: url('CircularStd-MediumItalic.eot');
+    font-family: $font-primary-heading;
     src:
         local('Circular Std Medium Italic'),
         local('CircularStd-MediumItalic'),
@@ -11,8 +12,7 @@
 }
 
 @font-face {
-    font-family: 'Circular Std';
-    src: url('CircularStd-Black.eot');
+    font-family: $font-primary-heading;
     src:
         local('Circular Std Black'),
         local('CircularStd-Black'),
@@ -23,8 +23,7 @@
 }
 
 @font-face {
-    font-family: 'Circular Std';
-    src: url('CircularStd-Medium.eot');
+    font-family: $font-primary-heading;
     src:
         local('Circular Std Medium'),
         local('CircularStd-Medium'),
@@ -35,8 +34,7 @@
 }
 
 @font-face {
-    font-family: 'Circular Std';
-    src: url('CircularStd-Bold.eot');
+    font-family: $font-primary-heading;
     src:
         local('Circular Std Bold'),
         local('CircularStd-Bold'),
@@ -47,8 +45,7 @@
 }
 
 @font-face {
-    font-family: 'Circular Std';
-    src: url('CircularStd-BlackItalic.eot');
+    font-family: $font-primary-heading;
     src:
         local('Circular Std Black Italic'),
         local('CircularStd-BlackItalic'),
@@ -59,8 +56,7 @@
 }
 
 @font-face {
-    font-family: 'Circular Std Book';
-    src: url('CircularStd-BookItalic.eot');
+    font-family: $font-primary-heading;
     src:
         local('Circular Std Book Italic'),
         local('CircularStd-BookItalic'),
@@ -71,8 +67,7 @@
 }
 
 @font-face {
-    font-family: 'Circular Std';
-    src: url('CircularStd-BoldItalic.eot');
+    font-family: $font-primary-heading;
     src:
         local('Circular Std Bold Italic'),
         local('CircularStd-BoldItalic'),
@@ -83,8 +78,7 @@
 }
 
 @font-face {
-    font-family: 'Circular Std Book';
-    src: url('CircularStd-Book.eot');
+    font-family: $font-primary-heading;
     src:
         local('Circular Std Book'),
         local('CircularStd-Book'),
