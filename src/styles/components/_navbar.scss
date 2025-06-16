@@ -5,16 +5,26 @@
     &__orange-glow-image {
         position: absolute;
         top: 0px;
-        z-index: 0;
+        z-index: -6;
     }
+}
+.icon-hamburger {
+    font-size: 40px;
 }
 
 .navbar {
     @include flex-center;
-
     width: 100vw;
     padding: 38px 19px;
-    width: 100dvw;
+    font-size: 14px;
+
+    & > * {
+        flex: 1;
+    }
+
+    &__button-container {
+        display: none;
+    }
 
     &__flex-container {
         @include flex-center;
@@ -31,41 +41,78 @@
     &__logo {
         height: 40px;
         width: 40px;
+
+        &:hover {
+            position: relative;
+            z-index: 500;
+            transition: transform 0.5s cubic-bezier(0.17, 0.67, 0.87, 0.32);
+            transform: rotate(360deg);
+        }
     }
 
     &__hamburger-container {
+        order: 5;
+        flex: 1;
         justify-content: flex-end;
     }
 
-    &__button-container {
-        // display: none;
-    }
-
     @include respond-to($tablet-breakpoint) {
-        .navbar {
-            padding: 30px 66px;
+        padding: 30px 66px;
 
-            &__button-container {
-                display: flex;
-                order: 8;
-                flex: 1;
-                justify-content: flex-end;
-            }
+        &__button-container,
+        &__logo-container,
+        &__hamburger-container {
+            @include flex-center;
+        }
 
-            &__logo-container {
-                @include flex-center;
-                order: 6;
-                flex: 1;
-            }
-            &__hamburger-container {
-                order: 2;
-                flex: 1;
-                justify-content: flex-start;
-            }
+        &__button-container {
+            order: 8;
+            justify-content: flex-end;
+        }
+
+        &__logo-container {
+            order: 5;
+        }
+        &__hamburger-container {
+            order: 2;
+            justify-content: flex-start;
         }
     }
-}
 
-.icon-hamburger {
-    font-size: 40px;
+    @include respond-to($desktop-breakpoint) {
+        padding: 64px 150px;
+        padding-right: 102px;
+        justify-content: space-between;
+
+        &__button-container,
+        &__logo-container,
+        &__hamburger-container,
+        &__navlinks-container {
+            @include flex-center;
+        }
+
+        &__button-container {
+            flex: 1.2;
+            order: 8;
+        }
+
+        &__logo-container {
+            order: 1.5;
+            flex: 0.6;
+            justify-content: flex-start;
+        }
+        &__hamburger-container {
+            display: none;
+        }
+        &__navlinks-container {
+            @include flex-center;
+            order: 5;
+            flex: 2;
+            gap: 4rem;
+        }
+
+        .navlinks__container-close-icon {
+            display: none;
+        }
+    }
 }

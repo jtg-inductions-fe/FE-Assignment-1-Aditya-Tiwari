@@ -36,5 +36,13 @@
         @media screen and (min-width: $tablet-breakpoint) {
             @content;
         }
+    } @else if $break-point==$phone-breakpoint {
+        @media screen and (min-width: $phone-breakpoint) {
+            @content;
+        }
+    } @else if $break-point==$desktop-breakpoint {
+        @media screen and (min-width: $desktop-breakpoint) {
+            @content;
+        }
     }
 }

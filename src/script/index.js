@@ -1,31 +1,20 @@
 import '../styles/main.scss';
 
 let hamburgerIcon = document.querySelector('.icon-hamburger');
-let navigationDrawer = document.querySelector('.navigation-drawer');
-let navigationDrawerNavlinksContainer = document.querySelector(
-    '.navigation-drawer__navlinks-container',
-);
-let closeNavigationDrawerButton = document.querySelector(
-    '.navigation-drawer__close-icon',
-);
 
-function closeNavigationDrawer(ele) {
-    ele.addEventListener('click', () => {
-        navigationDrawer.style.display = 'none';
-        hamburgerIcon.style.visibility = 'visible';
-    });
-}
+let navlinksContainer = document.querySelector('.navlinks__container');
+let navigationDrawerCloseIcon = document.querySelector(
+    '.navlinks__container-close-icon',
+);
 
 hamburgerIcon.addEventListener('click', () => {
-    navigationDrawer.style.position = 'absolute';
-    hamburgerIcon.style.visibility = 'hidden';
-    navigationDrawer.style.display = 'flex';
-    navigationDrawer.style.flexDirection = 'column';
+    navlinksContainer.style.display = 'flex';
+    navlinksContainer.style.position = 'absolute';
+    hamburgerIcon.style.display = 'none';
 });
 
-closeNavigationDrawer(navigationDrawer);
-closeNavigationDrawer(closeNavigationDrawerButton);
-
-navigationDrawerNavlinksContainer.addEventListener('click', (e) => {
-    e.stopPropagation();
+navigationDrawerCloseIcon.addEventListener('click', () => {
+    hamburgerIcon.style.display = 'flex';
+    navlinksContainer.style.position = 'static';
+    navlinksContainer.style.display = 'none';
 });
