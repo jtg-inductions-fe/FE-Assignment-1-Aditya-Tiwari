@@ -1,5 +1,15 @@
+@use 'variables' as *;
+
 @mixin flex-center {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+}
+
+@mixin respond-to($break-point) {
+    @if $break-point==$tablet-breakpoint {
+        @media screen and (min-width: $tablet-breakpoint) {
+            @content;
+        }
+    }
 }
