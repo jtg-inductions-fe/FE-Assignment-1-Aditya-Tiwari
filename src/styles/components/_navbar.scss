@@ -11,30 +11,6 @@
 
 .navbar {
     @include flex-center;
-    @include respond-to($tablet-breakpoint) {
-        .navbar {
-            padding: 30px 66px;
-
-            &__button-container {
-                display: flex;
-                order: 8;
-                flex: 1;
-                justify-content: flex-end;
-            }
-
-            &__logo-container {
-                order: 6;
-                flex: 1;
-                @include flex-center;
-            }
-            &__hamburger-container {
-                order: 10;
-                flex: 1;
-                justify-content: flex-start;
-            }
-        }
-    }
-    // @include respond-to(tb);
 
     width: 100vw;
     padding: 38px 19px;
@@ -62,7 +38,31 @@
     }
 
     &__button-container {
-        display: none;
+        // display: none;
+    }
+
+    @include respond-to($tablet-breakpoint) {
+        .navbar {
+            padding: 30px 66px;
+
+            &__button-container {
+                display: flex;
+                order: 8;
+                flex: 1;
+                justify-content: flex-end;
+            }
+
+            &__logo-container {
+                @include flex-center;
+                order: 6;
+                flex: 1;
+            }
+            &__hamburger-container {
+                order: 2;
+                flex: 1;
+                justify-content: flex-start;
+            }
+        }
     }
 }
 
