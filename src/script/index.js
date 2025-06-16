@@ -17,6 +17,7 @@ function closeNavigationDrawer(ele) {
 }
 
 hamburgerIcon.addEventListener('click', () => {
+    navigationDrawer.style.position = 'absolute';
     hamburgerIcon.style.visibility = 'hidden';
     navigationDrawer.style.display = 'flex';
     navigationDrawer.style.flexDirection = 'column';
