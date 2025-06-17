@@ -1,13 +1,11 @@
-$blue-theme-color: rgb(93, 80, 198); //theme blue color(eg. buttons)
-$yellow-primary-color: rgb(250, 205, 73); //yellow glow gradient
-$pink-theme-color: rgb(248, 94, 159); //pink colored text
-$black-theme-color: rgb(25, 24, 37); //black font color
-$orange-theme-color: rgb(255, 87, 34); //orange glow gradient
-$font-heading: 'Circular Std'; //font for heading
-$font-body: 'Inter'; //font for body
-$grey-navbar-text-color: rgba(
-    25,
-    24,
-    37,
-    0.5
-); //grey navlinks color with opacity
+// color variables
+$iris: rgb(93, 80, 198);
+$flame-yellow: rgb(250, 205, 73);
+$oleander-pink: rgb(248, 94, 159);
+$coarse-wool: rgb(25, 24, 37);
+$smashing-pumpkins: rgb(255, 87, 34);
+$coarse-wool-light: rgba(25, 24, 37, 0.5);
+
+// font family variables
+$font-heading: 'Circular Std';
+$font-body: 'Inter';
