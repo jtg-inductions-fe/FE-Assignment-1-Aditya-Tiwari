@@ -1,0 +1,22 @@
+.navbar-container--show {
+    display: flex;
+    position: absolute;
+    top: 0px;
+}
+
+.element--hide {
+    display: none;
+}
+
+.element--show {
+    display: flex;
+}
+
+.navigation-drawer--move-to-flex {
+    position: static;
+}
+
+.navbar-container--hide {
+    position: static;
+    display: none;
+}

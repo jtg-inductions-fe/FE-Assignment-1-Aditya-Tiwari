@@ -1,9 +1,3 @@
-@use 'abstracts/mixins';
-@use 'vendors/font-icons';
-@use 'abstracts/fonts';
-@use 'base/reset.scss';
-@use 'base/typography';
-@use 'components/button';
-@use 'components/navigation-drawer';
-@use 'components/navbar';
-@use 'base/animation';
+@use './vendors' as *;
+@use './base' as *;
+@use './components' as *;

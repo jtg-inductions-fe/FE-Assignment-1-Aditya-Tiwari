@@ -1,9 +1,9 @@
-@use '../abstracts/variables' as *;
-@use '../abstracts/mixins' as *;
+@use '../abstracts' as *;
 
 .navlinks {
     &__container {
         display: none;
+        position: static;
         z-index: 5;
     }
     &__container-close-icon {
