@@ -1,89 +1,70 @@
 @use '../abstracts' as *;
 
-@font-face {
-    font-family: $font-primary-heading;
-    src:
-        local('Circular Std Medium Italic'),
-        local('CircularStd-MediumItalic'),
-        url('../../../public/assets/fonts/CircularStd-MediumItalic.woff2')
-            format('woff2');
-    font-weight: 500;
-    font-style: italic;
-}
+// inter font
+@include inter-load-font($font-primary-body, 'Inter', 200, normal, 'ttf');
 
-@font-face {
-    font-family: $font-primary-heading;
-    src:
-        local('Circular Std Black'),
-        local('CircularStd-Black'),
-        url('../../../public/assets/fonts/CircularStd-Black.woff2')
-            format('woff2');
-    font-weight: 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: $font-primary-heading;
-    src:
-        local('Circular Std Medium'),
-        local('CircularStd-Medium'),
-        url('../../../public/assets/fonts/CircularStd-Medium.woff2')
-            format('woff2');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: $font-primary-heading;
-    src:
-        local('Circular Std Bold'),
-        local('CircularStd-Bold'),
-        url('../../../public/assets/fonts/CircularStd-Bold.woff2')
-            format('woff2');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: $font-primary-heading;
-    src:
-        local('Circular Std Black Italic'),
-        local('CircularStd-BlackItalic'),
-        url('../../../public/assets/fonts/CircularStd-BlackItalic.woff2')
-            format('woff2');
-    font-weight: 900;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: $font-primary-heading;
-    src:
-        local('Circular Std Book Italic'),
-        local('CircularStd-BookItalic'),
-        url('../../../public/assets/fonts/CircularStd-BookItalic.woff2')
-            format('woff2');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: $font-primary-heading;
-    src:
-        local('Circular Std Bold Italic'),
-        local('CircularStd-BoldItalic'),
-        url('../../../public/assets/fonts/CircularStd-BoldItalic.woff2')
-            format('woff2');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: $font-primary-heading;
-    src:
-        local('Circular Std Book'),
-        local('CircularStd-Book'),
-        url('../../../public/assets/fonts/CircularStd-Book.woff2')
-            format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
+// circular std font
+@include circular-std-load-font(
+    $font-primary-heading,
+    'Circular Std Medium Italic',
+    'CircularStd-MediumItalic',
+    500,
+    italic,
+    'woff2'
+);
+@include circular-std-load-font(
+    $font-primary-heading,
+    'Circular Std Black',
+    'CircularStd-Black',
+    900,
+    normal,
+    'woff2'
+);
+@include circular-std-load-font(
+    $font-primary-heading,
+    'Circular Std Medium',
+    'CircularStd-Medium',
+    500,
+    normal,
+    'woff2'
+);
+@include circular-std-load-font(
+    $font-primary-heading,
+    'Circular Std Bold',
+    'CircularStd-Bold',
+    bold,
+    normal,
+    'woff2'
+);
+@include circular-std-load-font(
+    $font-primary-heading,
+    'Circular Std Black Italic',
+    'CircularStd-BlackItalic',
+    900,
+    italic,
+    'woff2'
+);
+@include circular-std-load-font(
+    $font-primary-heading,
+    'Circular Std Book Italic',
+    'CircularStd-BookItalic',
+    normal,
+    italic,
+    'woff2'
+);
+@include circular-std-load-font(
+    $font-primary-heading,
+    'Circular Std Bold Italic',
+    'CircularStd-BoldItalic',
+    bold,
+    italic,
+    'woff2'
+);
+@include circular-std-load-font(
+    $font-primary-heading,
+    'Circular Std Book',
+    'CircularStd-Book',
+    normal,
+    normal,
+    'woff2'
+);

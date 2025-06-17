@@ -1,3 +1,36 @@
+@mixin circular-std-load-font($name, $local, $file, $weight, $style, $format) {
+    @font-face {
+        font-family: $name;
+        src:
+            local($local),
+            url('/assets/fonts/Circular std/#{$file}.#{$format}')
+                format('#{$format}');
+        font-weight: $weight;
+        font-style: $style;
+        font-display: swap;
+    }
+}
+
+@mixin icomoon-load-font($name, $file, $weight, $style, $format) {
+    @font-face {
+        font-family: $name;
+        src: url('/assets/icomoon/#{$file}.#{$format}') format('#{$format}');
+        font-weight: $weight;
+        font-style: $style;
+        font-display: swap;
+    }
+}
+
+@mixin inter-load-font($name, $file, $weight, $style, $format) {
+    @font-face {
+        font-family: $name;
+        src: url('/assets/fonts/Inter/#{$file}.#{$format}') format('#{$format}');
+        font-weight: $weight;
+        font-style: $style;
+        font-display: swap;
+    }
+}
+
 @mixin flex-center {
     display: flex;
     justify-content: center;
