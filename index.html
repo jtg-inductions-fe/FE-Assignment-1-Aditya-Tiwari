@@ -10,12 +10,16 @@
         />
     </head>
     <body>
+        <noscript>
+            <div>You must enable JavaScript to view this page.</div>
+        </noscript>
         <header>
-            <img
+            <!-- <img
                 class="header__orange-glow-image"
                 src="/assets/images/orange-glow.svg"
                 alt="orange glow on top of the homepage"
-            />
+            /> -->
+            <div class="header__orange-glow"></div>
             <nav class="navbar">
                 <div class="navbar__flex-container navbar__logo-container">
                     <a href="/"
@@ -28,16 +32,18 @@
                 <div class="navbar__flex-container navbar__hamburger-container">
                     <span class="icon-hamburger"></span>
                 </div>
-                <ul class="navbar__navlinks-container navlinks__container">
+                <ul
+                    class="navbar__navlinks-container navlinks__container navbar-container--hide"
+                >
                     <img
                         class="navlinks__container-close-icon"
                         src="/assets/images/close_icon.svg"
                         alt="close navigation drawer icon"
                     />
-                    <a class="navbar__navlinks">Home</a>
-                    <a class="navbar__navlinks"> Discover </a>
-                    <a class="navbar__navlinks"> Special Deals </a>
-                    <a class="navbar__navlinks">Contact</a>
+                    <a href="/" class="navbar__navlinks">Home</a>
+                    <a href="/" class="navbar__navlinks"> Discover </a>
+                    <a href="/" class="navbar__navlinks"> Special Deals </a>
+                    <a href="/" class="navbar__navlinks">Contact</a>
                 </ul>
                 <div class="navbar__button-container">
                     <a class="btn navbar__button--login" href="/login"

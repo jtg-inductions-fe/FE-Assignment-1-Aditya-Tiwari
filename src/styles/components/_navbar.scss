@@ -1,11 +1,17 @@
-@use '../abstracts/mixins' as *;
-@use '../abstracts/variables' as *;
+@use '../abstracts' as *;
 
 .header {
-    &__orange-glow-image {
+    &__orange-glow {
         position: absolute;
-        top: 0px;
+        top: -250px;
+        left: -250px;
         z-index: -6;
+        // background-color:#FF5722;
+        height: 500px;
+        width: 500px;
+        border-radius: 100%;
+        opacity: 50%;
+        backdrop-filter: blur(10px);
     }
 }
 .icon-hamburger {
