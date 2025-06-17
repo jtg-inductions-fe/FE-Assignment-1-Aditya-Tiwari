@@ -1,25 +1,32 @@
-# Pull Request Template
+ Template
+## Decription
 
-## Description
-
-Please include a summary of the changes and the related issue.
+Please include a summary of the changes and the related issue. 
 
 Fixes # (issue)
 
 ## Type of Change
 
--   [x] Bug fix
--   [x] New feature
--   [x] Documentation update
--   [x] Refactor
--   [x] Other (please describe):
+- [ ] Bug fix
+- [ ] New feature
+- [ ] Documentation update
+- [ ] Refactor
+- [ ] Other (please describe):
 
 ## Checklist
 
--   [x] My code follows the style guidelines of this project
--   [x] I have performed a self-review of my code
--   [x] I have commented my code, particularly in hard-to-understand areas
--   [x] I have made corresponding changes to the documentation
--   [x] My changes generate no new warnings
--   [x] I have added tests that prove my fix is effective or that my feature works
--   [x] New and existing unit tests pass locally with my changes
+- [ ] My code follows the style guidelines of this project
+- [ ] I have performed a self-review of my code
+- [ ] I have commented my code, particularly in hard-to-understand areas
+- [ ] I have made corresponding changes to the documentation
+- [ ] My changes generate no new warnings
+- [ ] I have added tests that prove my fix is effective or that my feature works
+- [ ] New and existing unit tests pass locally with my changes
+
+## Screenshots (if applicable)
+
+_Please add screenshots to help explain your changes._
+
+## Additional Context
+
+_Add any other context about the pull request here._
