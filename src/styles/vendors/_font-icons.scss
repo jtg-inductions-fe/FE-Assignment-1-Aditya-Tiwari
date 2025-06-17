@@ -1,8 +1,18 @@
 // Font icons styling by Icomoon
 
 @use '../abstracts/' as *;
-
-@include icomoon-load-font('icomoon', 'icomoon', normal, normal, 'woff');
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot?pnx2t9');
+    src:
+        url('fonts/icomoon.eot?pnx2t9#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?pnx2t9') format('truetype'),
+        url('fonts/icomoon.woff?pnx2t9') format('woff'),
+        url('fonts/icomoon.svg?pnx2t9#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
 
 [class^='icon-'],
 [class*=' icon-'] {
@@ -20,6 +30,18 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-instagram-square:before {
+    content: '\e901';
+}
+.icon-facebook-with-circle:before {
+    content: '\e90b';
+}
+.icon-twitter-with-circle:before {
+    content: '\e90a';
+}
+.icon-instagram-with-circle:before {
+    content: '\e900';
+}
 .icon-video-play-pause:before {
     content: '\e902';
     color: #5d50c6;
@@ -32,16 +54,26 @@
     content: '\e904';
     color: #5d50c6;
 }
-
+.icon-brand-logo:before {
+    content: '\e905';
+}
 .icon-star:before {
     content: '\e906';
     color: #facd49;
 }
-
+.icon-twitter-logo .path1:before {
+    content: '\e907';
+    color: rgb(93, 80, 198);
+}
+.icon-twitter-logo .path2:before {
+    content: '\e908';
+    margin-left: -1em;
+    color: rgb(241, 242, 242);
+}
+.icon-facebook-logo:before {
+    content: '\e909';
+    color: #5d50c6;
+}
 .icon-arrow-down-circle:before {
     content: '\e952';
-}
-.icon-video-play-pause:before {
-    content: '\e902';
-    color: #5d50c6;
 }

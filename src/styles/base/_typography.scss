@@ -1,69 +1,33 @@
 @use '../abstracts' as *;
 
 // inter font
-@include inter-load-font($font-primary-body, 'Inter', 200, normal, 'ttf');
+@include load-font($font-body, 'Inter/Inter', 400, normal, 'ttf');
 
 // circular std font
-@include circular-std-load-font(
-    $font-primary-heading,
-    'Circular Std Medium Italic',
-    'CircularStd-MediumItalic',
-    500,
-    italic,
-    'woff2'
-);
-@include circular-std-load-font(
-    $font-primary-heading,
-    'Circular Std Black',
-    'CircularStd-Black',
+@include load-font(
+    $font-heading,
+    'Circular std/CircularStd-Black',
     900,
     normal,
     'woff2'
 );
-@include circular-std-load-font(
-    $font-primary-heading,
-    'Circular Std Medium',
-    'CircularStd-Medium',
+@include load-font(
+    $font-heading,
+    'Circular std/CircularStd-Medium',
     500,
     normal,
     'woff2'
 );
-@include circular-std-load-font(
-    $font-primary-heading,
-    'Circular Std Bold',
-    'CircularStd-Bold',
+@include load-font(
+    $font-heading,
+    'Circular std/CircularStd-Bold',
     bold,
     normal,
     'woff2'
 );
-@include circular-std-load-font(
-    $font-primary-heading,
-    'Circular Std Black Italic',
-    'CircularStd-BlackItalic',
-    900,
-    italic,
-    'woff2'
-);
-@include circular-std-load-font(
-    $font-primary-heading,
-    'Circular Std Book Italic',
-    'CircularStd-BookItalic',
-    normal,
-    italic,
-    'woff2'
-);
-@include circular-std-load-font(
-    $font-primary-heading,
-    'Circular Std Bold Italic',
-    'CircularStd-BoldItalic',
-    bold,
-    italic,
-    'woff2'
-);
-@include circular-std-load-font(
-    $font-primary-heading,
-    'Circular Std Book',
-    'CircularStd-Book',
+@include load-font(
+    $font-heading,
+    'Circular std/CircularStd-Book',
     normal,
     normal,
     'woff2'
