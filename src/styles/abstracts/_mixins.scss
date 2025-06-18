@@ -1,3 +1,4 @@
+//Mixin defined for font faces
 @mixin load-font($name, $file, $weight, $style, $format) {
     @font-face {
         font-family: $name;
@@ -8,6 +9,7 @@
     }
 }
 
+//mixin defined to apply flex property
 @mixin flex-center {
     display: flex;
     justify-content: center;

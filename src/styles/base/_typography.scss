@@ -1,34 +1,27 @@
 @use '../abstracts' as *;
 
 // inter font
-@include load-font($font-body, 'Inter/Inter', 400, normal, 'ttf');
+@include load-font($inter-font, 'Inter/inter-regular', 400, normal, 'woff2');
 
 // circular std font
 @include load-font(
-    $font-heading,
-    'Circular std/CircularStd-Black',
+    $circular-font,
+    'Circular std/circular-std-black',
     900,
     normal,
     'woff2'
 );
 @include load-font(
-    $font-heading,
-    'Circular std/CircularStd-Medium',
+    $circular-font,
+    'Circular std/circular-std-medium',
     500,
     normal,
     'woff2'
 );
 @include load-font(
-    $font-heading,
-    'Circular std/CircularStd-Bold',
-    bold,
-    normal,
-    'woff2'
-);
-@include load-font(
-    $font-heading,
-    'Circular std/CircularStd-Book',
-    normal,
+    $circular-font,
+    'Circular std/circular-std-bold',
+    700,
     normal,
     'woff2'
 );
