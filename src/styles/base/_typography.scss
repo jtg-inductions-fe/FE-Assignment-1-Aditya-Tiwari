@@ -1,36 +1,6 @@
 @use '../abstracts' as *;
 @use 'sass:map';
 
-// font face details map
-$font-face-details: (
-        'name': $inter-font,
-        'file': 'Inter/inter-regular',
-        'weight': 400,
-        'style': normal,
-        'format': 'woff2',
-    ),
-    (
-        'name': $circular-font,
-        'file': 'Circular std/circular-std-black',
-        'weight': 900,
-        'style': normal,
-        'format': 'woff2',
-    ),
-    (
-        'name': $circular-font,
-        'file': 'Circular std/circular-std-medium',
-        'weight': 500,
-        'style': normal,
-        'format': 'woff2',
-    ),
-    (
-        'name': $circular-font,
-        'file': 'Circular std/circular-std-bold',
-        'weight': 700,
-        'style': normal,
-        'format': 'woff2',
-    );
-
 @each $font in $font-face-details {
     @include load-font(
         map.get($font, 'name'),
