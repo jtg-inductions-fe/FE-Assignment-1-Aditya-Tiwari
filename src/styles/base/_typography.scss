@@ -1,8 +1,12 @@
 @use '../abstracts' as *;
 @use 'sass:map';
 
-// Loop through each font in the font-face list and load it using the load-font mixin.
-// This automatically generates @font-face rules for all custom fonts defined in $font-face-details.
+// Creating font faces for circular and inter font
+
+* {
+    font-family: $circular-font;
+}
+
 @each $font in $font-face-details {
     @include load-font(
         map.get($font, 'name'),
@@ -11,102 +15,4 @@
         map.get($font, 'style'),
         map.get($font, 'format')
     );
-}
-
-@font-face {
-    font-family: $circular-font;
-    src: url('CircularStd-MediumItalic.eot');
-    src:
-        local('Circular Std Medium Italic'),
-        local('CircularStd-MediumItalic'),
-        url('../../../public/assets/fonts/CircularStd-MediumItalic.woff2')
-            format('woff2');
-    font-weight: 500;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: $circular-font;
-    src: url('CircularStd-Black.eot');
-    src:
-        local('Circular Std Black'),
-        local('CircularStd-Black'),
-        url('../../../public/assets/fonts/CircularStd-Black.woff2')
-            format('woff2');
-    font-weight: 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: $circular-font;
-    src: url('CircularStd-Medium.eot');
-    src:
-        local('Circular Std Medium'),
-        local('CircularStd-Medium'),
-        url('../../../public/assets/fonts/CircularStd-Medium.woff2')
-            format('woff2');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: $circular-font;
-    src: url('CircularStd-Bold.eot');
-    src:
-        local('Circular Std Bold'),
-        local('CircularStd-Bold'),
-        url('../../../public/assets/fonts/CircularStd-Bold.woff2')
-            format('woff2');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: $circular-font;
-    src: url('CircularStd-BlackItalic.eot');
-    src:
-        local('Circular Std Black Italic'),
-        local('CircularStd-BlackItalic'),
-        url('../../../public/assets/fonts/CircularStd-BlackItalic.woff2')
-            format('woff2');
-    font-weight: 900;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: $circular-font;
-    src: url('CircularStd-BookItalic.eot');
-    src:
-        local('Circular Std Book Italic'),
-        local('CircularStd-BookItalic'),
-        url('../../../public/assets/fonts/CircularStd-BookItalic.woff2')
-            format('woff2');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: $circular-font;
-    src: url('CircularStd-BoldItalic.eot');
-    src:
-        local('Circular Std Bold Italic'),
-        local('CircularStd-BoldItalic'),
-        url('../../../public/assets/fonts/CircularStd-BoldItalic.woff2')
-            format('woff2');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: $circular-font;
-    src: url('CircularStd-Book.eot');
-    src:
-        local('Circular Std Book'),
-        local('CircularStd-Book'),
-        url('../../../public/assets/fonts/CircularStd-Book.eot?#iefix')
-            format('embedded-opentype'),
-        url('../../../public/assets/fonts/CircularStd-Book.woff2')
-            format('woff2');
-    font-weight: normal;
-    font-style: normal;
 }
