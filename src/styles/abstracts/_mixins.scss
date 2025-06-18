@@ -6,6 +6,17 @@
     align-items: center;
 }
 
+//Mixin defined for font faces
+@mixin load-font($name, $file, $weight, $style, $format) {
+    @font-face {
+        font-family: $name;
+        src: url('/assets/fonts/#{$file}.#{$format}') format('#{$format}');
+        font-weight: $weight;
+        font-style: $style;
+        font-display: swap;
+    }
+}
+
 @mixin respond-to($break-point) {
     @if $break-point==$tablet-breakpoint {
         @media screen and (min-width: $tablet-breakpoint) {
