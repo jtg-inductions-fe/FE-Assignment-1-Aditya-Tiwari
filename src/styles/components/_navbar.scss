@@ -154,6 +154,7 @@
 
             & > a {
                 all: unset;
+                cursor: pointer;
                 color: $coarse-wool-light;
             }
             @include flex-center;
