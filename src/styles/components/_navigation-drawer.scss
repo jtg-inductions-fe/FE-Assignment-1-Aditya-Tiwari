@@ -1,20 +1,24 @@
 @use '../abstracts' as *;
 
 .navlinks {
-    &__container {
-        display: none;
-        position: static;
-        z-index: 5;
-    }
     &__container-close-icon {
-        height: 30px;
-        width: 30px;
+        height: px-to-rem(30px);
+        width: px-to-rem(30px);
     }
+
+    // &__container{
+    //     position: absolute;
+    //     z-index: 5;
+    //     height: 100vh;
+    //     width: 40vw;
+    //     top: 0px;
+    //     left: 0px;
+    // }
 }
 
 .navbar {
     &__navlinks {
-        color: $grey-navbar-text-color;
+        color: $coarse-wool-light;
         cursor: pointer;
 
         &:hover {
@@ -23,5 +27,6 @@
     }
 }
 .navbar__button--login {
-    box-shadow: 0.2px 0.2px 300px $grey-navbar-text-color;
+    box-shadow: px-to-rem(0.2px) px-to-rem(0.2px) px-to-rem(300px)
+        $coarse-wool-light;
 }
