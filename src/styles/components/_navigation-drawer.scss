@@ -5,27 +5,8 @@
         height: px-to-rem(30px);
         width: px-to-rem(30px);
     }
-
-    // &__container{
-    //     position: absolute;
-    //     z-index: 5;
-    //     height: 100vh;
-    //     width: 40vw;
-    //     top: 0px;
-    //     left: 0px;
-    // }
 }
 
-.navbar {
-    &__navlinks {
-        color: $coarse-wool-light;
-        cursor: pointer;
-
-        &:hover {
-            color: black;
-        }
-    }
-}
 .navbar__button--login {
     box-shadow: px-to-rem(0.2px) px-to-rem(0.2px) px-to-rem(300px)
         $coarse-wool-light;

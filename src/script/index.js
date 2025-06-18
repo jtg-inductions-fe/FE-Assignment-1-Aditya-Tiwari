@@ -1,4 +1,4 @@
-import '../styles/main.scss';
+// import '../styles/main.scss';
 
 let hamburgerIcon = document.querySelector('.icon-hamburger');
 
