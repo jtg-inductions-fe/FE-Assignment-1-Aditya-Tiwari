@@ -4,7 +4,7 @@
     font-weight: 700;
     padding: 1rem 2rem;
     font-size: 0.875rem;
-    border-radius: 100px;
+    border-radius: px-to-rem(100px);
     display: inline-block;
     @include flex-center;
     &:hover {
@@ -19,11 +19,12 @@
     }
     &--signup {
         color: white;
-        background-color: $blue-theme-color;
+        background-color: $iris;
     }
 }
 
 .navigation__button-container {
     @include flex-center;
-    gap: 10px;
+    gap: px-to-rem(20px);
+    // flex-wrap: wrap;
 }
