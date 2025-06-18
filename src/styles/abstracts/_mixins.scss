@@ -1,4 +1,12 @@
-//Mixin defined for font faces
+/// Mixin to load a custom font using @font-face
+/// @param {String} $name - The name of the font-family to be used in CSS.
+/// @param {String} $file - The base filename (without extension) of the font file located in /assets/fonts.
+/// @param {Number | String} $weight - The font weight (e.g., 400, bold).
+/// @param {String} $style - The font style (e.g., normal, italic).
+/// @param {String} $format - The format of the font file (e.g., woff2, woff, ttf).
+///
+/// @example scss
+///   @include load-font('Open Sans', 'open-sans-regular', 400, normal, 'woff2');
 @mixin load-font($name, $file, $weight, $style, $format) {
     @font-face {
         font-family: $name;
@@ -9,7 +17,14 @@
     }
 }
 
-//mixin defined to apply flex property
+/// Mixin to center elements using flexbox
+///
+/// Applies `display: flex` and centers children both horizontally and vertically.
+///
+/// @example scss
+///   .container {
+///     @include flex-center;
+///   }
 @mixin flex-center {
     display: flex;
     justify-content: center;
