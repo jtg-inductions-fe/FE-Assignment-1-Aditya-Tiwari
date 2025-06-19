@@ -25,6 +25,10 @@ body {
     width: 100vw;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 img,
 picture,
 video,
@@ -63,4 +67,8 @@ h5,
 
 ul {
     list-style: none;
+}
+
+a {
+    cursor: pointer;
 }

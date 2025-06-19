@@ -2,16 +2,23 @@
 
 .navigation__button-container {
     @include flex-center;
-    gap: px-to-rem(20px);
+    gap: 2rem;
 }
 
 .btn {
     @include flex-center;
     font-weight: 700;
-    padding: 1rem 2rem;
-    border-radius: px-to-rem(100px);
+    padding: 1.5rem 3rem;
+    border-radius: 10rem;
     display: inline-block;
-    box-shadow: px-to-rem(1px) px-to-rem(1px) px-to-rem(100px) black;
+    box-shadow: 0.05rem 0.05rem 10rem black;
+    &--login {
+        background-color: white;
+    }
+    &--signup {
+        color: white;
+        background-color: $iris;
+    }
     &:hover {
         transition: transform 0.5s ease-in-out;
         transform: scale(1.1);
@@ -23,15 +30,5 @@
 
     @include respond-to($desktop-breakpoint) {
         box-shadow: none;
-    }
-}
-
-.navbar__button {
-    &--login {
-        background-color: white;
-    }
-    &--signup {
-        color: white;
-        background-color: $iris;
     }
 }
