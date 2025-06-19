@@ -24,7 +24,7 @@
             circle,
             rgba(255, 87, 34, 0.4) 0%,
             // Soft orange center
-            rgba(255, 255, 255, 1) 65% // Fades out to white
+            rgba(255, 255, 255, 0) 65% // Fades out to white
         );
 
         @media screen and (max-width: 630px) {
