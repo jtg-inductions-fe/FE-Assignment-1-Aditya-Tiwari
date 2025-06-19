@@ -1,15 +1,28 @@
 @use '../abstracts' as *;
 
+.navigation__button-container {
+    @include flex-center;
+    gap: px-to-rem(20px);
+}
+
 .btn {
+    @include flex-center;
     font-weight: 700;
     padding: 1rem 2rem;
-    font-size: 0.875rem;
     border-radius: px-to-rem(100px);
     display: inline-block;
-    @include flex-center;
+    box-shadow: px-to-rem(1px) px-to-rem(1px) px-to-rem(100px) black;
     &:hover {
         transition: transform 0.5s ease-in-out;
         transform: scale(1.1);
+    }
+
+    @include respond-to($tablet-breakpoint) {
+        box-shadow: none;
+    }
+
+    @include respond-to($desktop-breakpoint) {
+        box-shadow: none;
     }
 }
 
@@ -21,10 +34,4 @@
         color: white;
         background-color: $iris;
     }
-}
-
-.navigation__button-container {
-    @include flex-center;
-    gap: px-to-rem(20px);
-    // flex-wrap: wrap;
 }
