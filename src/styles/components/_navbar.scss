@@ -1,6 +1,4 @@
-@use '../abstracts/variables' as *;
-@use '../abstracts/mixins' as *;
-@use '../abstracts/functions' as *;
+@use '../abstracts' as *;
 
 .icon-hamburger {
     font-size: $font-size-heading-medium;
@@ -85,6 +83,9 @@
             border-radius: 0;
             border-bottom: 1px solid white;
         }
+        @include respond-to($desktop-breakpoint) {
+            border: none;
+        }
     }
 
     & > a:hover {
@@ -101,9 +102,8 @@
     width: 30rem;
     border-radius: 0 0 1rem 1rem;
     align-items: center;
-    justify-content: center;
-    padding: 3rem 0;
-    gap: 2rem;
+    justify-content: space-evenly;
+    padding: 3rem 1rem;
     border-top: 0.1rem solid white;
     box-shadow: -0.05rem 0 10rem rgba(0, 0, 0, 0.518);
 }
@@ -114,7 +114,6 @@
 
         &__button-container {
             all: unset;
-            // position: static;
             @include flex-center;
             flex: 1;
             order: 8;
@@ -164,8 +163,10 @@
             height: auto;
             width: auto;
             flex: 1.5;
+
             & > a {
                 color: $coarse-wool-light;
+                font-size: 1.4rem;
             }
 
             & a:hover {
