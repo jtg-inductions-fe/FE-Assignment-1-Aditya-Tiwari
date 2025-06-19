@@ -26,5 +26,14 @@
             // Soft orange center
             rgba(255, 255, 255, 1) 65% // Fades out to white
         );
+
+        @media screen and (max-width: 630px) {
+            & {
+                height: calc(50vh + 9rem);
+                width: calc(100vw + 9rem);
+                top: -9rem;
+                left: -9rem;
+            }
+        }
     }
 }

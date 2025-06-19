@@ -7,10 +7,10 @@
  * Container for grouping login and signup buttons.
  * Uses flexbox to center-align and space items evenly.
  */
-.navigation__button-container {
-    @include flex-center; // Centers child buttons horizontally and vertically
-    gap: 1rem; // Adds space between buttons
-}
+// .navigation__button-container {
+//     @include flex-center; // Centers child buttons horizontally and vertically
+//     gap: 1rem; // Adds space between buttons
+// }
 
 /**
  * ====================================
@@ -33,6 +33,9 @@
    */
     &--login {
         background-color: white;
+        &:hover {
+            background-color: whitesmoke;
+        }
     }
 
     /**
