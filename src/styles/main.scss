@@ -5,7 +5,3 @@
 @use './themes/' as *;
 @use './layout/' as *;
 @use './abstracts/' as *;
-
-* {
-    font-family: $circular-font;
-}
