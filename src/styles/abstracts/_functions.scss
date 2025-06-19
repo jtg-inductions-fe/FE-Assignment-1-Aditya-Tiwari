@@ -1,1 +1,9 @@
-/*  TO DO : All the required functions such as px to rem conversion  */
+// @use 'variables';
+
+@function px-to-rem($px, $root-font-size: 16px) {
+    @return calc(#{$px} / #{$root-font-size}) * 1rem;
+}
+
+// @function px-to-remy($px, $root-font-size: 16px) {
+//     @return calc($px / $root-font-size) * 1rem;
+// }
