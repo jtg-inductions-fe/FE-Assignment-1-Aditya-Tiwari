@@ -89,6 +89,7 @@
     right: 1rem;
     padding: 3rem 1rem;
     height: calc(28.8rem + 4rem);
+    gap: 1rem;
     background-color: $iris;
     box-shadow: 0 0.1rem 10rem rgba(0, 0, 0, 0.518);
 
@@ -166,22 +167,11 @@
         padding-right: 10.2rem;
         justify-content: space-between;
 
-        &__button-container,
-        &__logo-container,
-        &__hamburger-container,
-        &__navlinks-container {
-            @include flex-center;
-        }
-
         &__button-container {
-            flex: 1;
-            order: 8;
-            justify-content: flex-end;
             gap: 1rem;
         }
 
         &__logo-container {
-            order: 1.5;
             flex: 0.6;
             justify-content: flex-start;
         }
@@ -197,15 +187,15 @@
             @include flex-center;
             position: static;
             order: 5;
-            gap: 1em;
             justify-content: space-evenly;
-            height: auto;
-            width: auto;
             flex: 1.5;
 
             & > a {
                 color: $coarse-wool-light;
-                font-size: 1.4rem;
+                font-size: $font-size-small;
+            }
+            & > a:active {
+                color: black;
             }
 
             & a:hover {
