@@ -43,12 +43,17 @@
 }
 
 @mixin respond-to($break-point) {
-    @if $break-point==$tablet-breakpoint {
-        @media screen and (min-width: $tablet-breakpoint) {
+    @if $break-point < $phone-breakpoint {
+        @media screen and (max-width: $break-point) {
             @content;
         }
     } @else if $break-point==$phone-breakpoint {
         @media screen and (min-width: $phone-breakpoint) {
+            @content;
+        }
+    }
+    @if $break-point==$tablet-breakpoint {
+        @media screen and (min-width: $tablet-breakpoint) {
             @content;
         }
     } @else if $break-point==$desktop-breakpoint {
