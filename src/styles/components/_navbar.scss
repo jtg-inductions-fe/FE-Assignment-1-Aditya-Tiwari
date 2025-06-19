@@ -1,56 +1,72 @@
-@use '../abstracts' as *;
+@use '../abstracts' as *; // Import all abstract variables, mixins, and functions
 
+// Icon styles
 .icon-hamburger {
     font-size: $font-size-heading-medium;
 }
 
+// =======================
+// Navbar Styles
+// =======================
 .navbar {
     @include flex-center;
     width: 100vw;
     padding: 3.8rem 1.9rem;
     font-size: $font-size-small;
 
+    // Button container (e.g. for login/signup)
     &__button-container {
         @include flex-center;
         display: none;
         font-size: $font-size-small;
     }
 
+    // Flex container for layout alignment
     &__flex-container {
         @include flex-center;
         flex: 1;
     }
 
+    // Logo container - aligned left by default
     &__logo-container {
         @include flex-center;
         justify-content: flex-start;
         flex: 1;
     }
+
+    // Logo image dimensions
     &__logo {
         height: 4rem;
         width: 4rem;
     }
 
+    // Hamburger icon container - aligned right by default
     &__hamburger-container {
         @include flex-center;
         order: 5;
         flex: 1;
         justify-content: flex-end;
     }
+
+    // Navigation links container (hidden by default)
     &__navlinks-container {
         display: none;
     }
 
+    // ===== Responsive Styles: Tablet and Up =====
     @include respond-to($tablet-breakpoint) {
         padding: 3rem 6.6rem;
 
+        // Reordering containers for layout shift on tablets
         &__logo-container,
         &__hamburger-container {
             @include flex-center;
         }
+
         &__logo-container {
             order: 5;
         }
+
         &__hamburger-container {
             order: 2;
             justify-content: flex-start;
@@ -58,6 +74,10 @@
     }
 }
 
+// =======================
+// Drawer Navigation Active State
+// =======================
+// Shown when hamburger menu is toggled
 .navbar__navigation-drawer-navlinks--active {
     display: flex;
     flex-direction: column;
@@ -72,6 +92,7 @@
     background-color: $iris;
     box-shadow: 0 0.1rem 10rem rgba(0, 0, 0, 0.518);
 
+    // Individual navigation link styles
     & > a {
         @include flex-center;
         color: white;
@@ -79,20 +100,28 @@
         font-size: 2rem;
         border-radius: 1rem;
 
+        // Tablet: reduce border radius
         @include respond-to($tablet-breakpoint) {
             border-radius: 0;
             border-bottom: 1px solid white;
         }
+
+        // Desktop: remove border entirely
         @include respond-to($desktop-breakpoint) {
             border: none;
         }
     }
 
+    // Hover effect for navigation links
     & > a:hover {
         background-color: rgba(255, 255, 255, 0.219);
     }
 }
 
+// =======================
+// Drawer Button Container Active State
+// =======================
+// For buttons like Sign In / Register when drawer is open
 .navbar__navigation-drawer-button-container--active {
     position: absolute;
     right: 1rem;
@@ -108,7 +137,11 @@
     box-shadow: -0.05rem 0 10rem rgba(0, 0, 0, 0.518);
 }
 
+// =======================
+// Additional Responsive Styles
+// =======================
 .navbar {
+    // Tablet breakpoint overrides
     @include respond-to($tablet-breakpoint) {
         padding: 3rem 6.6rem;
 
@@ -126,6 +159,8 @@
             border-radius: 1rem;
         }
     }
+
+    // Desktop breakpoint overrides
     @include respond-to($desktop-breakpoint) {
         padding: 6.4rem 15rem;
         padding-right: 10.2rem;
@@ -150,9 +185,13 @@
             flex: 0.6;
             justify-content: flex-start;
         }
+
+        // Hide hamburger menu on large screens
         &__hamburger-container {
             display: none;
         }
+
+        // Show inline nav links with hover styles
         &__navlinks-container {
             all: unset;
             @include flex-center;

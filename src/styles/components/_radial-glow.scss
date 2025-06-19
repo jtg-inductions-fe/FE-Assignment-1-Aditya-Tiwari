@@ -1,20 +1,30 @@
-@use '../abstracts/' as *;
+@use '../abstracts/' as *; // Import project-wide variables, mixins, functions
 
+// =======================
+// Header Component Styles
+// =======================
 .header {
+    // ----------------------------------------
+    // Orange Glow Effect Behind the Header
+    // ----------------------------------------
+    // This element creates a glowing radial background effect
+    // using a large blurred circular gradient placed behind the header.
+    // It enhances visual depth and design contrast.
     &__orange-glow {
         position: absolute;
-        height: 80rem;
+        height: 80rem; // Large size to make the glow subtle and wide-spread
         width: 80rem;
-        top: -20rem;
+        top: -20rem; // Shifted up and left to center glow behind the header
         left: -20rem;
-        border-radius: 100%;
-        z-index: -6;
+        border-radius: 100%; // Makes the glow a perfect circle
+        z-index: -6; // Pushed far back behind all header elements
 
-        background: $smashing-pumpkins;
+        background: $smashing-pumpkins; // Fallback color (orange tone)
         background: radial-gradient(
             circle,
             rgba(255, 87, 34, 0.4) 0%,
-            rgba(255, 255, 255, 1) 65%
+            // Soft orange center
+            rgba(255, 255, 255, 1) 65% // Fades out to white
         );
     }
 }

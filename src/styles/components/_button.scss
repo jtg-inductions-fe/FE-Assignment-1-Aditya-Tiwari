@@ -1,29 +1,62 @@
-@use '../abstracts' as *;
+@use '../abstracts' as *; // Import shared variables, mixins, and functions
 
+/**
+ * ====================================
+ * Navigation Button Container
+ * ====================================
+ * Container for grouping login and signup buttons.
+ * Uses flexbox to center-align and space items evenly.
+ */
 .navigation__button-container {
-    @include flex-center;
-    gap: 1rem;
+    @include flex-center; // Centers child buttons horizontally and vertically
+    gap: 1rem; // Adds space between buttons
 }
 
+/**
+ * ====================================
+ * Button Component (.btn)
+ * ====================================
+ * Base styles for all button elements used in navigation.
+ * Includes padding, bold text, rounded corners, and default shadow.
+ */
 .btn {
-    @include flex-center;
+    @include flex-center; // Aligns button content to center
     font-weight: 700;
     padding: 1.5rem 3rem;
-    border-radius: 10rem;
+    border-radius: 10rem; // Creates pill-shaped button
     display: inline-block;
-    box-shadow: 0.05rem 0.05rem 10rem black;
+    box-shadow: 0.05rem 0.05rem 10rem black; // Soft glowing shadow
+
+    /**
+   * Modifier: Login Button
+   * White background for login button
+   */
     &--login {
         background-color: white;
     }
+
+    /**
+   * Modifier: Signup Button
+   * Iris-colored background and white text
+   */
     &--signup {
         color: white;
         background-color: $iris;
     }
+
+    /**
+   * Hover Interaction
+   * Smooth scaling effect when hovered
+   */
     &:hover {
         transition: transform 0.5s ease-in-out;
-        transform: scale(1.1);
+        transform: scale(1.1); // Slight zoom on hover
     }
 
+    /**
+   * Responsive Overrides
+   * Remove shadow on tablet and desktop to reduce visual noise
+   */
     @include respond-to($tablet-breakpoint) {
         box-shadow: none;
     }

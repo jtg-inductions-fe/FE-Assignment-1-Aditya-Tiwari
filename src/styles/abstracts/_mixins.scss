@@ -31,32 +31,63 @@
     align-items: center;
 }
 
-//Mixin defined for font faces
+/**
+ * @mixin load-font
+ * Dynamically generates a @font-face rule to load a custom font.
+ *
+ * @param {String} $name - The font-family name.
+ * @param {String} $file - The base filename of the font (without extension).
+ * @param {String|Number} $weight - Font weight (e.g., 400, 700).
+ * @param {String} $style - Font style (e.g., normal, italic).
+ * @param {String} $format - Font file format (e.g., 'woff2', 'woff', 'ttf').
+ *
+ * Example usage:
+ *   @include load-font('Inter', 'inter-regular', 400, normal, 'woff2');
+ */
 @mixin load-font($name, $file, $weight, $style, $format) {
     @font-face {
         font-family: $name;
         src: url('/assets/fonts/#{$file}.#{$format}') format('#{$format}');
         font-weight: $weight;
         font-style: $style;
-        font-display: swap;
+        font-display: swap; // Ensures fallback font is shown until custom font loads
     }
 }
 
+/**
+ * @mixin respond-to
+ * A responsive design helper for media queries.
+ * Accepts a breakpoint value or keyword and applies styles only when that breakpoint is matched.
+ *
+ * @param {Number|String} $break-point - The target breakpoint. Can be a pixel value or a predefined variable.
+ *
+ * Supported:
+ *   - Less than phone-breakpoint (max-width)
+ *   - phone-breakpoint (min-width)
+ *   - tablet-breakpoint (min-width)
+ *   - desktop-breakpoint (min-width)
+ *
+ * Example usage:
+ *   @include respond-to($tablet-breakpoint) {
+ *     // Tablet-specific styles here
+ *   }
+ */
 @mixin respond-to($break-point) {
     @if $break-point < $phone-breakpoint {
         @media screen and (max-width: $break-point) {
             @content;
         }
-    } @else if $break-point==$phone-breakpoint {
+    } @else if $break-point == $phone-breakpoint {
         @media screen and (min-width: $phone-breakpoint) {
             @content;
         }
     }
-    @if $break-point==$tablet-breakpoint {
+
+    @if $break-point == $tablet-breakpoint {
         @media screen and (min-width: $tablet-breakpoint) {
             @content;
         }
-    } @else if $break-point==$desktop-breakpoint {
+    } @else if $break-point == $desktop-breakpoint {
         @media screen and (min-width: $desktop-breakpoint) {
             @content;
         }
