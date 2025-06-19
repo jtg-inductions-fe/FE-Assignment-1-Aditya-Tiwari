@@ -3,13 +3,13 @@
 // ========================================
 
 // Select the hamburger menu icon element
-let hamburgerIcon = document.querySelector('.icon-hamburger');
+const hamburgerIcon = document.querySelector('.icon-hamburger');
 
 // Select the container for navigation links (drawer menu)
-let navlinksContainer = document.querySelector('.navlinks__container');
+const navlinksContainer = document.querySelector('.navlinks__container');
 
 // Select the container that holds action buttons (e.g., login/signup)
-let buttonContainer = document.querySelector('.navbar__button-container');
+const buttonContainer = document.querySelector('.navbar__button-container');
 
 /**
  * Event Listener: Toggle Navigation Drawer

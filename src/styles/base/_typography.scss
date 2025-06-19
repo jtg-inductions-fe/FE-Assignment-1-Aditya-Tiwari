@@ -2,12 +2,23 @@
 @use 'sass:map';
 
 // Creating font faces for circular and inter font
-
-* {
-    font-family: $circular-font;
-}
-
 @each $font in $font-face-details {
+    @if not map.has-key($font, 'name') {
+        @error "Font is missing 'name': #{$font}";
+    }
+    @if not map.has-key($font, 'file') {
+        @error "Font is missing 'file': #{$font}";
+    }
+    @if not map.has-key($font, 'weight') {
+        @error "Font is missing 'weight': #{$font}";
+    }
+    @if not map.has-key($font, 'style') {
+        @error "Font is missing 'style': #{$font}";
+    }
+    @if not map.has-key($font, 'format') {
+        @error "Font is missing 'format': #{$font}";
+    }
+
     @include load-font(
         map.get($font, 'name'),
         map.get($font, 'file'),

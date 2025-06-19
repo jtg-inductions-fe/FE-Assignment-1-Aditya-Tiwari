@@ -3,6 +3,7 @@
 // Icon styles
 .icon-hamburger {
     font-size: $font-size-heading-medium;
+    cursor: pointer;
 }
 
 // =======================
@@ -10,9 +11,10 @@
 // =======================
 .navbar {
     @include flex-center;
-    width: 100vw;
+    width: 100%;
     padding: 3.8rem 1.9rem;
     font-size: $font-size-small;
+    font-family: $circular-font;
 
     // Button container (e.g. for login/signup)
     &__button-container {

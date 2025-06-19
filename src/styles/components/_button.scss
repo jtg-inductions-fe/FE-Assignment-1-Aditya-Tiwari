@@ -7,10 +7,6 @@
  * Container for grouping login and signup buttons.
  * Uses flexbox to center-align and space items evenly.
  */
-// .navigation__button-container {
-//     @include flex-center; // Centers child buttons horizontally and vertically
-//     gap: 1rem; // Adds space between buttons
-// }
 
 /**
  * ====================================
@@ -26,6 +22,7 @@
     border-radius: 10rem; // Creates pill-shaped button
     display: inline-block;
     box-shadow: 0.05rem 0.05rem 10rem black; // Soft glowing shadow
+    transition: transform 0.5s ease-in-out;
 
     /**
    * Modifier: Login Button
@@ -52,7 +49,6 @@
    * Smooth scaling effect when hovered
    */
     &:hover {
-        transition: transform 0.5s ease-in-out;
         transform: scale(1.1); // Slight zoom on hover
     }
 
