@@ -50,39 +50,39 @@ $desktop-breakpoint: 1440px;
 // font face details including font name,file name,weight,style and format
 $font-face-details: (
         'name': $inter-font,
-        'file': 'Inter/inter-regular',
+        'file': '#{$inter-font}/inter-regular',
         'weight': 400,
         'style': normal,
         'format': 'woff2',
     ),
     (
         'name': $circular-font,
-        'file': 'Circular std/circular-std-black',
+        'file': '#{$circular-font}/circular-std-black',
         'weight': 900,
         'style': normal,
         'format': 'woff2',
     ),
     (
         'name': $circular-font,
-        'file': 'Circular std/circular-std-medium',
+        'file': '#{$circular-font}/circular-std-medium',
         'weight': 500,
         'style': normal,
         'format': 'woff2',
     ),
     (
         'name': $circular-font,
-        'file': 'Circular std/circular-std-bold',
+        'file': '#{$circular-font}/circular-std-bold',
         'weight': 700,
         'style': normal,
         'format': 'woff2',
     );
 
 //font-size varaibles
-$font-size-small: px-to-rem(14px);
-$font-size-medium: px-to-rem(23px);
-$font-size-large: px-to-rem(28);
-$font-size-xl: px-to-rem(35px);
-$font-size-heading-large: px-to-rem(56px);
-$font-size-heading-xl: px-to-rem(69px);
-$font-size-heading-medium: px-to-rem(40);
-$font-size-heading-small: (18px);
+$font-size-small: 1.4rem;
+$font-size-medium: 2.3rem;
+$font-size-large: 2.8rem;
+$font-size-xl: 3.5rem;
+$font-size-heading-large: 5.6rem;
+$font-size-heading-xl: 6.9rem;
+$font-size-heading-medium: 4rem;
+$font-size-heading-small: 1.8rem;
