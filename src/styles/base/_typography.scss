@@ -27,3 +27,7 @@
         map.get($font, 'format')
     );
 }
+
+p {
+    font-family: $inter-font;
+}

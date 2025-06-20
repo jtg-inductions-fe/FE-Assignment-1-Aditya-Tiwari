@@ -1,0 +1,81 @@
+@use '../abstracts/' as *;
+@use '../components/' as *;
+
+.hero {
+    @include flex-center;
+    flex-direction: column;
+    font-family: $circular-font;
+
+    &__wrapper {
+        @include flex-center;
+        flex-direction: column;
+        flex: 1;
+        // padding: 3.2rem 0;
+        gap: 3.2rem;
+    }
+    &__body-button-container {
+        @include flex-center;
+        flex-direction: column;
+        width: 100%;
+        gap: 2.4rem;
+        padding-top: 3.2rem;
+
+        @include respond-to($tablet-breakpoint) {
+            flex-direction: row;
+            width: auto;
+            gap: 1.6rem;
+        }
+    }
+    &__partners-wrapper {
+        @include flex-center;
+        flex-wrap: wrap;
+        gap: 2.7rem;
+        padding: 3.2rem 0;
+        width: 100vw;
+
+        @include respond-to($tablet-breakpoint) {
+            width: 100%;
+        }
+
+        @include respond-to($desktop-breakpoint) {
+            gap: 10rem;
+        }
+    }
+    &__body {
+        @include flex-center;
+        flex-direction: column;
+        text-align: center;
+        // gap: 3.2rem;
+    }
+    &__partner img {
+        height: 2rem;
+
+        @include respond-to($tablet-breakpoint) {
+            height: 3.2rem;
+        }
+    }
+    &__btn {
+        width: 100%;
+        padding: 2rem 3.2rem;
+
+        @include respond-to($tablet-breakpoint) {
+            padding: 1.6rem 3.2rem;
+        }
+    }
+    &__description {
+        font-size: $font-size-small;
+        color: $coarse-wool-light;
+    }
+    &__title {
+        font-size: $font-size-heading-medium;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: 0%;
+        padding-top: 3.2rem;
+        padding-bottom: 1.6rem;
+
+        & span {
+            color: $oleander-pink;
+        }
+    }
+}
