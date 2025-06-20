@@ -16,7 +16,7 @@
 
 [class^='icon-'],
 [class*=' icon-'] {
-    /* use !important to prevent issues with browser extensions that change fonts */
+    // Use !important to prevent issues with browser extensions that change fonts
     font-family: 'icomoon' !important;
     speak: never;
     font-style: normal;
@@ -25,7 +25,7 @@
     text-transform: none;
     line-height: 1;
 
-    /* Better Font Rendering =========== */
+    //  Better Font Rendering
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }

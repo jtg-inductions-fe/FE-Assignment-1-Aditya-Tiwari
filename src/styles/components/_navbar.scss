@@ -6,9 +6,7 @@
     cursor: pointer;
 }
 
-// =======================
 // Navbar Styles
-// =======================
 .navbar {
     @include flex-center;
     width: 100%;
@@ -16,7 +14,7 @@
     font-size: $font-size-small;
     font-family: $circular-font;
 
-    // Button container (e.g. for login/signup)
+    // Button container
     &__button-container {
         display: none;
     }
@@ -53,9 +51,7 @@
     }
 }
 
-// =======================
 // Drawer Navigation Active State
-// =======================
 // Shown when hamburger menu is toggled
 .navbar__navigation-drawer-navlinks--active {
     display: flex;
@@ -80,7 +76,7 @@
         font-size: 2rem;
         border-radius: 1rem;
 
-        // Tablet: reduce border radius
+        // Tablet: remove border radius
         @include respond-to($tablet-breakpoint) {
             border-radius: 0;
             border-bottom: 1px solid white;
@@ -98,9 +94,7 @@
     }
 }
 
-// =======================
 // Drawer Button Container Active State
-// =======================
 // For buttons like Sign In / Register when drawer is open
 .navbar__navigation-drawer-button-container--active {
     position: absolute;
@@ -117,11 +111,9 @@
     box-shadow: -0.05rem 0 10rem rgba(0, 0, 0, 0.518);
 }
 
-// =======================
 // Additional Responsive Styles
-// =======================
 .navbar {
-    // ===== Responsive Styles: Tablet and Up =====
+    // Responsive Styles: Tablet and Up
     @include respond-to($tablet-breakpoint) {
         padding: 3rem 6.6rem;
         &__logo-container,
