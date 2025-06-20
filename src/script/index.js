@@ -1,3 +1,5 @@
+import '../styles/main.scss';
+
 // ========================================
 // Mobile Navigation Toggle Script
 // ========================================
