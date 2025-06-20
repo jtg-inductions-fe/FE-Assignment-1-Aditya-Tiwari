@@ -18,9 +18,7 @@
 
     // Button container (e.g. for login/signup)
     &__button-container {
-        @include flex-center;
         display: none;
-        font-size: $font-size-small;
     }
 
     // Flex container for layout alignment
@@ -31,7 +29,6 @@
 
     // Logo container - aligned left by default
     &__logo-container {
-        @include flex-center;
         justify-content: flex-start;
         flex: 1;
     }
@@ -53,26 +50,6 @@
     // Navigation links container (hidden by default)
     &__navlinks-container {
         display: none;
-    }
-
-    // ===== Responsive Styles: Tablet and Up =====
-    @include respond-to($tablet-breakpoint) {
-        padding: 3rem 6.6rem;
-
-        // Reordering containers for layout shift on tablets
-        &__logo-container,
-        &__hamburger-container {
-            @include flex-center;
-        }
-
-        &__logo-container {
-            order: 5;
-        }
-
-        &__hamburger-container {
-            order: 2;
-            justify-content: flex-start;
-        }
     }
 }
 
@@ -129,7 +106,7 @@
     position: absolute;
     right: 1rem;
     display: flex;
-    top: calc(11.6rem + 32.8rem);
+    top: 44.4rem;
     background-color: $iris;
     width: 30rem;
     border-radius: 0 0 1rem 1rem;
@@ -144,9 +121,23 @@
 // Additional Responsive Styles
 // =======================
 .navbar {
-    // Tablet breakpoint overrides
+    // ===== Responsive Styles: Tablet and Up =====
     @include respond-to($tablet-breakpoint) {
         padding: 3rem 6.6rem;
+        &__logo-container,
+        &__hamburger-container {
+            @include flex-center;
+        }
+
+        // Reordering containers for layout shift on tablets
+        &__logo-container {
+            order: 5;
+        }
+
+        &__hamburger-container {
+            order: 2;
+            justify-content: flex-start;
+        }
 
         &__button-container {
             all: unset;
@@ -200,7 +191,7 @@
                 color: black;
             }
 
-            & a:hover {
+            & > a:hover {
                 color: black;
             }
         }

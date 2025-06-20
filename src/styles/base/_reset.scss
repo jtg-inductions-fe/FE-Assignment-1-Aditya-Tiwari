@@ -8,7 +8,6 @@
 * {
     margin: 0;
     padding: 0;
-    text-decoration: none;
     font-family: inherit;
     color: inherit;
 }
@@ -17,7 +16,7 @@ body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
-    width: 100vw;
+    width: 100%;
 }
 
 html {
@@ -65,5 +64,6 @@ ul {
 }
 
 a {
+    text-decoration: none;
     cursor: pointer;
 }

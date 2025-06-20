@@ -22,6 +22,7 @@ const buttonContainer = document.querySelector('.navbar__button-container');
  *
  * This is done by adding/removing the respective "active" CSS classes.
  */
+
 hamburgerIcon.addEventListener('click', () => {
     navlinksContainer.classList.toggle(
         'navbar__navigation-drawer-navlinks--active',

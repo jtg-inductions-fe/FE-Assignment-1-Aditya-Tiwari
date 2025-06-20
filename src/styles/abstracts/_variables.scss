@@ -1,4 +1,4 @@
-// color variables
+// Color variables
 $iris: rgb(93, 80, 198);
 $flame-yellow: rgb(250, 205, 73);
 $oleander-pink: rgb(248, 94, 159);
@@ -6,46 +6,17 @@ $coarse-wool: rgb(25, 24, 37);
 $smashing-pumpkins: rgb(255, 87, 34);
 $coarse-wool-light: rgba(25, 24, 37, 0.5);
 
-// font family variables
+// Font family variables
 $circular-font: 'Circular Std';
 $inter-font: 'Inter';
 
-// font face details
-$font-face-details: (
-        'name': $inter-font,
-        'file': '#{$inter-font}/inter-regular',
-        'weight': 400,
-        'style': normal,
-        'format': 'woff2',
-    ),
-    (
-        'name': $circular-font,
-        'file': '#{$circular-font}/circular-std-black',
-        'weight': 900,
-        'style': normal,
-        'format': 'woff2',
-    ),
-    (
-        'name': $circular-font,
-        'file': '#{$circular-font}/circular-std-medium',
-        'weight': 500,
-        'style': normal,
-        'format': 'woff2',
-    ),
-    (
-        'name': $circular-font,
-        'file': '#{$circular-font}/circular-std-bold',
-        'weight': 700,
-        'style': normal,
-        'format': 'woff2',
-    );
-
-//break-points
+// Break-points
+$small-devices: 630px;
 $phone-breakpoint: 430px;
 $tablet-breakpoint: 1024px;
 $desktop-breakpoint: 1440px;
 
-// font face details including font name,file name,weight,style and format
+// Font face details including font name,file name,weight,style and format
 $font-face-details: (
         'name': $inter-font,
         'file': '#{$inter-font}/inter-regular',
@@ -75,7 +46,7 @@ $font-face-details: (
         'format': 'woff2',
     );
 
-//font-size variables
+// Font-size variables
 $font-size-small: 1.4rem;
 $font-size-medium: 2.3rem;
 $font-size-large: 2.8rem;

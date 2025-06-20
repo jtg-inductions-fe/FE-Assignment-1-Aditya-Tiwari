@@ -1,14 +1,14 @@
 // Font icons styling by Icomoon
-@use '../abstracts/' as *;
+@use '../abstracts' as *;
 @font-face {
     font-family: 'icomoon';
     src: url('/assets/icomoon/icomoon.eot?pnx2t9');
     src:
-        url('assets/icomoon/icomoon.eot?pnx2t9#iefix')
+        url('/assets/icomoon/icomoon.eot?pnx2t9#iefix')
             format('embedded-opentype'),
-        url('assets/icomoon/icomoon.ttf?pnx2t9') format('truetype'),
-        url('assets/icomoon/icomoon.woff?pnx2t9') format('woff'),
-        url('assets/icomoon/icomoon.svg?pnx2t9#icomoon') format('svg');
+        url('/assets/icomoon/icomoon.ttf?pnx2t9') format('truetype'),
+        url('/assets/icomoon/icomoon.woff?pnx2t9') format('woff'),
+        url('/assets/icomoon/icomoon.svg?pnx2t9#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
