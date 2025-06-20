@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 /// Mixin to load a custom font using @font-face
 /// @param {String} $name - The name of the font-family to be used in CSS.
 /// @param {String} $file - The base filename (without extension) of the font file located in /assets/fonts.
