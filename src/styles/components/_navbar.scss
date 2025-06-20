@@ -169,16 +169,17 @@ header {
 
     // Desktop breakpoint overrides
     @include respond-to($desktop-breakpoint) {
-        padding: 6.4rem 15rem;
+        padding: 3.2rem 15rem;
         padding-right: 10.2rem;
         justify-content: space-between;
 
         &__button-container {
             gap: 1rem;
+            flex: 0.5;
         }
 
         &__logo-container {
-            flex: 0.6;
+            flex: 0.5;
             justify-content: flex-start;
         }
 
@@ -194,7 +195,7 @@ header {
             position: static;
             order: 5;
             justify-content: space-evenly;
-            flex: 1.5;
+            flex: 1;
 
             & > a {
                 color: $coarse-wool-light;

@@ -9,10 +9,33 @@
     &__wrapper {
         @include flex-center;
         flex-direction: column;
-        flex: 1;
-        // padding: 3.2rem 0;
-        gap: 3.2rem;
+        // flex: 1;
+        padding: 6.4rem 0;
+        // gap: 3.2rem;
+        // width: 100%
+
+        @include respond-to($desktop-breakpoint) {
+            flex-direction: row;
+            padding: 0;
+            padding-top: 6rem;
+        }
     }
+
+    &__image {
+        width: calc(89.6rem - 124px);
+
+        @include respond-to($desktop-breakpoint) {
+            width: calc(140rem - 124px);
+        }
+    }
+
+    &__image-wrapper {
+        @include respond-to($desktop-breakpoint) {
+            // flex-direction: row;
+            order: 5;
+        }
+    }
+
     &__body-button-container {
         @include flex-center;
         flex-direction: column;
@@ -24,6 +47,11 @@
             flex-direction: row;
             width: auto;
             gap: 1.6rem;
+        }
+
+        @include respond-to($desktop-breakpoint) {
+            width: 100%;
+            justify-content: flex-start;
         }
     }
     &__partners-wrapper {
@@ -46,6 +74,16 @@
         flex-direction: column;
         text-align: center;
         // gap: 3.2rem;
+
+        @include respond-to($tablet-breakpoint) {
+            padding: 0 26.5rem;
+        }
+
+        @include respond-to($desktop-breakpoint) {
+            padding: 0;
+            align-items: flex-start;
+            text-align: left;
+        }
     }
     &__partner img {
         height: 2rem;
@@ -61,10 +99,19 @@
         @include respond-to($tablet-breakpoint) {
             padding: 1.6rem 3.2rem;
         }
+
+        @include respond-to($desktop-breakpoint) {
+            // padding: 1.6rem 3.2rem;
+            width: auto;
+        }
     }
     &__description {
         font-size: $font-size-small;
         color: $coarse-wool-light;
+
+        @include respond-to($tablet-breakpoint) {
+            font-size: $font-size-heading-small;
+        }
     }
     &__title {
         font-size: $font-size-heading-medium;
@@ -76,6 +123,13 @@
 
         & span {
             color: $oleander-pink;
+        }
+
+        @include respond-to($tablet-breakpoint) {
+            font-size: $font-size-heading-large;
+        }
+        @include respond-to($desktop-breakpoint) {
+            font-size: $font-size-heading-xl;
         }
     }
 }
