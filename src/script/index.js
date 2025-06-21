@@ -31,3 +31,28 @@ hamburgerIcon.addEventListener('click', () => {
         'navbar__navigation-drawer-button-container--active',
     );
 });
+
+/**
+ * Event Listener: Toggle Navigation Drawer
+ *
+ * When the space outside the navigation drawer is clicked:
+ * - Hide the navigation links container
+ * - Hide the button container
+ *
+ * This is done by removing the respective "active" CSS classes.
+ */
+
+document.addEventListener('click', (event) => {
+    if (
+        (event.target != navlinksContainer) &
+        (event.target != navbarButtonContainer) &
+        (event.target != hamburgerIcon)
+    ) {
+        navlinksContainer.classList.remove(
+            'navbar__navigation-drawer-navlinks--active',
+        );
+        navbarButtonContainer.classList.remove(
+            'navbar__navigation-drawer-button-container--active',
+        );
+    }
+});
