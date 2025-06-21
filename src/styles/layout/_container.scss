@@ -1,5 +1,26 @@
 @use '../abstracts' as *;
 
+// Container Sizing
+//
+// This SCSS module defines a responsive `.container` class that adapts its
+// maximum width based on the viewport size. The breakpoints are imported from
+// the abstracts layer, ensuring consistency across the project.
+//
+// Usage:
+//   Add the `.container` class to a wrapper element to constrain its width
+//   and provide consistent horizontal padding on different devices.
+//
+// Breakpoints:
+//   - Default: 92.1% max-width (mobile-first)
+//   - Tablet:  87.5% max-width
+//   - Desktop: 82.7% max-width
+//
+// The `respond-to` mixin is used for media queries, making the code DRY and
+// easy to maintain.
+//
+// Example:
+//   <div class="container"> ... </div>
+
 .container {
     max-width: 92.1%;
 

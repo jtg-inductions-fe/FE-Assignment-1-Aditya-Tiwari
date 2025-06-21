@@ -1,3 +1,33 @@
+// Hero Section Styles
+//
+// This SCSS module styles the `.hero` section, a visually impactful area
+// typically used at the top of a page to introduce content or a brand.
+// It uses responsive design, flexbox utilities, and custom variables
+// for a polished, adaptable layout.
+//
+// Usage:
+//   Add the `.hero` class to your main hero section. Use the BEM-style
+//   sub-elements (e.g., `.hero__wrapper`, `.hero__image`) for structure.
+//
+// Key Features:
+//   - Uses `flex-center` mixin for easy centering
+//   - Responsive breakpoints for tablet and desktop
+//   - BEM naming for clear structure
+//   - Custom font and color variables for consistency
+//
+// Structure:
+//   .hero
+//     &__wrapper
+//     &__image
+//     &__image-wrapper
+//     &__body-button-container
+//     &__partners-wrapper
+//     &__body
+//     &__partner img
+//     &__btn
+//     &__description
+//     &__title
+
 @use '../abstracts' as *;
 @use '../components' as *;
 
@@ -66,7 +96,6 @@
         @include flex-center;
         flex-direction: column;
         text-align: center;
-        // gap: 3.2rem;
 
         @include respond-to($tablet-breakpoint) {
             padding: 0 15rem;
@@ -78,7 +107,6 @@
             align-items: flex-start;
             text-align: left;
             align-self: center;
-            // padding-top: 15rem;
         }
     }
     &__partner img {
@@ -97,7 +125,6 @@
         }
 
         @include respond-to($desktop-breakpoint) {
-            // padding: 1.6rem 3.2rem;
             width: auto;
         }
     }
