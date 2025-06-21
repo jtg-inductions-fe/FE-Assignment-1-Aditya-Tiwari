@@ -1,13 +1,13 @@
 @use '../abstracts' as *;
 
 .container {
-    width: 92.1%;
+    max-width: 92.1%;
 
     @include respond-to($tablet-breakpoint) {
-        width: 87.5%;
+        max-width: 87.5%;
     }
 
     @include respond-to($desktop-breakpoint) {
-        width: 82.7%;
+        max-width: 82.7%;
     }
 }

@@ -16,7 +16,7 @@ $tablet-breakpoint: 1024px;
 $desktop-breakpoint: 1440px;
 
 // font face details including font name,file name,weight,style and format
-$font-face-details: (
+$font-face-list: (
         'name': $inter-font,
         'file': '#{$inter-font}/inter-regular',
         'weight': 400,

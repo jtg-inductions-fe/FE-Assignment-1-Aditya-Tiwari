@@ -99,7 +99,7 @@ header {
     top: 11.6rem;
     right: 1rem;
     padding: 3rem 1rem;
-    height: calc(28.8rem + 4rem);
+    height: 32.8rem;
     gap: 1rem;
     background-color: $iris;
     box-shadow: 0 0.1rem 10rem rgba(0, 0, 0, 0.518);
@@ -210,7 +210,7 @@ header {
                 color: black;
             }
 
-            & a:hover {
+            & > a:hover {
                 color: black;
             }
         }

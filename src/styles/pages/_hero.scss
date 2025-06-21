@@ -1,5 +1,5 @@
-@use '../abstracts/' as *;
-@use '../components/' as *;
+@use '../abstracts' as *;
+@use '../components' as *;
 
 .hero {
     @include flex-center;
@@ -12,32 +12,24 @@
         @include flex-center;
         flex-direction: column;
         gap: 3.2rem;
-        // flex: 1;
-        // padding: 6.4rem 0;
-        // width: 100%
 
         @include respond-to($desktop-breakpoint) {
             flex-direction: row;
             padding: 0;
-            // padding-top: 6rem;
         }
     }
-
     &__image {
-        width: calc(89.6rem - 124px);
+        width: calc(89.5rem - 124px);
 
         @include respond-to($desktop-breakpoint) {
             width: calc(137rem - 124px);
         }
     }
-
     &__image-wrapper {
         @include respond-to($desktop-breakpoint) {
-            // flex-direction: row;
             order: 5;
         }
     }
-
     &__body-button-container {
         @include flex-center;
         flex-direction: column;
@@ -60,7 +52,6 @@
         @include flex-center;
         flex-wrap: wrap;
         gap: 2.7rem;
-        // padding: 3.2rem 0;
         width: 100vw;
 
         @include respond-to($tablet-breakpoint) {
