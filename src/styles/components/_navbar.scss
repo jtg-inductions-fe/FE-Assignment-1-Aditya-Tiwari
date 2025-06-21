@@ -4,6 +4,11 @@
 .icon-hamburger {
     font-size: $font-size-heading-medium;
     cursor: pointer;
+
+    &:hover::before {
+        color: $iris;
+        opacity: 0.8;
+    }
 }
 
 header {
