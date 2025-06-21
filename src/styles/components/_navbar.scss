@@ -1,0 +1,191 @@
+@use '../abstracts' as *; // Import all abstract variables, mixins, and functions
+
+// Icon styles
+.icon-hamburger {
+    font-size: $font-size-heading-medium;
+    cursor: pointer;
+}
+
+// Navbar Styles
+.navbar {
+    @include flex-center;
+    width: 100%;
+    padding: 3.8rem 1.9rem;
+    font-size: $font-size-small;
+    font-family: $circular-font;
+
+    // Button container
+    &__button-container {
+        display: none;
+    }
+
+    // Flex container for layout alignment
+    &__flex-container {
+        @include flex-center;
+        flex: 1;
+    }
+
+    // Logo container - aligned left by default
+    &__logo-container {
+        justify-content: flex-start;
+        flex: 1;
+    }
+
+    // Logo image dimensions
+    &__logo {
+        height: 4rem;
+        width: 4rem;
+    }
+
+    // Hamburger icon container - aligned right by default
+    &__hamburger-container {
+        @include flex-center;
+        order: 5;
+        flex: 1;
+        justify-content: flex-end;
+    }
+
+    // Navigation links container (hidden by default)
+    &__navlinks-container {
+        display: none;
+    }
+}
+
+// Drawer Navigation Active State
+// Shown when hamburger menu is toggled
+.navbar__navigation-drawer-navlinks--active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 5;
+    width: 30rem;
+    border-radius: 1rem 1rem 0 0;
+    top: 11.6rem;
+    right: 1rem;
+    padding: 3rem 1rem;
+    height: calc(28.8rem + 4rem);
+    gap: 1rem;
+    background-color: $iris;
+    box-shadow: 0 0.1rem 10rem rgba(0, 0, 0, 0.518);
+
+    // Individual navigation link styles
+    & > a {
+        @include flex-center;
+        color: white;
+        flex: 1;
+        font-size: 2rem;
+        border-radius: 1rem;
+
+        // Tablet: remove border radius
+        @include respond-to($tablet-breakpoint) {
+            border-radius: 0;
+            border-bottom: 1px solid white;
+        }
+
+        // Desktop: remove border entirely
+        @include respond-to($desktop-breakpoint) {
+            border: none;
+        }
+    }
+
+    // Hover effect for navigation links
+    & > a:hover {
+        background-color: rgba(255, 255, 255, 0.219);
+    }
+}
+
+// Drawer Button Container Active State
+// For buttons like Sign In / Register when drawer is open
+.navbar__navigation-drawer-button-container--active {
+    position: absolute;
+    right: 1rem;
+    display: flex;
+    top: 44.4rem;
+    background-color: $iris;
+    width: 30rem;
+    border-radius: 0 0 1rem 1rem;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 3rem 1rem;
+    border-top: 0.1rem solid white;
+    box-shadow: -0.05rem 0 10rem rgba(0, 0, 0, 0.518);
+}
+
+// Additional Responsive Styles
+.navbar {
+    // Responsive Styles: Tablet and Up
+    @include respond-to($tablet-breakpoint) {
+        padding: 3rem 6.6rem;
+        &__logo-container,
+        &__hamburger-container {
+            @include flex-center;
+        }
+
+        // Reordering containers for layout shift on tablets
+        &__logo-container {
+            order: 5;
+        }
+
+        &__hamburger-container {
+            order: 2;
+            justify-content: flex-start;
+        }
+
+        &__button-container {
+            all: unset;
+            @include flex-center;
+            flex: 1;
+            order: 8;
+            justify-content: flex-end;
+            gap: 2rem;
+        }
+
+        &__navlinks-container {
+            left: 2rem;
+            border-radius: 1rem;
+        }
+    }
+
+    // Desktop breakpoint overrides
+    @include respond-to($desktop-breakpoint) {
+        padding: 6.4rem 15rem;
+        padding-right: 10.2rem;
+        justify-content: space-between;
+
+        &__button-container {
+            gap: 1rem;
+        }
+
+        &__logo-container {
+            flex: 0.6;
+            justify-content: flex-start;
+        }
+
+        // Hide hamburger menu on large screens
+        &__hamburger-container {
+            display: none;
+        }
+
+        // Show inline nav links with hover styles
+        &__navlinks-container {
+            all: unset;
+            @include flex-center;
+            position: static;
+            order: 5;
+            justify-content: space-evenly;
+            flex: 1.5;
+
+            & > a {
+                color: $coarse-wool-light;
+                font-size: $font-size-small;
+            }
+            & > a:active {
+                color: black;
+            }
+
+            & > a:hover {
+                color: black;
+            }
+        }
+    }
+}

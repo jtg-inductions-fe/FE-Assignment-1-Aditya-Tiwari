@@ -1,3 +1,5 @@
+@use './variables' as *;
+
 /// Mixin to load a custom font using @font-face
 /// @param {String} $name - The name of the font-family to be used in CSS.
 /// @param {String} $file - The base filename (without extension) of the font file located in /assets/fonts.
@@ -7,6 +9,7 @@
 ///
 /// @example scss
 ///   @include load-font('Open Sans', 'open-sans-regular', 400, normal, 'woff2');
+///
 @mixin load-font($name, $file, $weight, $style, $format) {
     @font-face {
         font-family: $name;
@@ -26,7 +29,38 @@
 ///     @include flex-center;
 ///   }
 @mixin flex-center {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
+}
+
+///@mixin respond-to
+///A responsive design helper for media queries.
+///Accepts a breakpoint value or keyword and applies styles only when that breakpoint is matched.
+///@param {Number|String} $break-point - The target breakpoint. Can be a pixel value or a predefined variable.
+///
+///Supported:
+///  - phone-breakpoint (min-width)
+///  - tablet-breakpoint (min-width)
+///  - desktop-breakpoint (min-width)
+///
+///Example usage:
+///  @include respond-to($tablet-breakpoint) {
+///    // Tablet-specific styles here
+///  }
+///
+@mixin respond-to($break-point) {
+    @if $break-point == $phone-breakpoint {
+        @media screen and (min-width: $phone-breakpoint) {
+            @content;
+        }
+    } @else if $break-point == $tablet-breakpoint {
+        @media screen and (min-width: $tablet-breakpoint) {
+            @content;
+        }
+    } @else if $break-point == $desktop-breakpoint {
+        @media screen and (min-width: $desktop-breakpoint) {
+            @content;
+        }
+    }
 }

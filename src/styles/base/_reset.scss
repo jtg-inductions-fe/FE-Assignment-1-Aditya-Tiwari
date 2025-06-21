@@ -8,11 +8,15 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: inherit;
+    color: inherit;
 }
 
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 html {
@@ -58,4 +62,9 @@ h5,
 
 ul {
     list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
 }
